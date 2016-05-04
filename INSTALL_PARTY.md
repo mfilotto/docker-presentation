@@ -30,6 +30,10 @@ export no_proxy=localhost```
 
 ## Activer [TTY](http://www.linusakesson.net/programming/tty/) sur Babun avec le [workaround de tiangolo](https://github.com/tiangolo/babun-docker)
 - Lancer la commande ```curl -s https://raw.githubusercontent.com/tiangolo/babun-docker/master/setup.sh | source /dev/stdin```
+
+## Ajouter des [alias](https://github.com/tcnksm/docker-alias) pour les commandes docker
+- Pour zsh lancer la commande ```curl -fsSL https://raw.github.com/tcnksm/docker-alias/master/zshrc >> ~/.zshrc && source ~/.zshrc```
+- Pour bash lancer la commande ```curl -fsSL https://raw.github.com/tcnksm/docker-alias/master/zshrc >> ~/.bashrc && source ~/.bashrc```
   
 ## Créer un Docker Host avec docker machine
 - Afficher les docker host :
