@@ -1,3 +1,4 @@
+```
 FROM docker-registry.valid.appli-gestion.nc/ubuntu:14.04
 MAINTAINER DTSI-Infras
 
@@ -17,9 +18,9 @@ VOLUME ["/usr/share/nginx/html/"]
 EXPOSE 80
 
 CMD ["nginx"]
-
+```
 ----------------------------------------
-
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,9 +50,9 @@ Commercial support is available at
 <p><em>Thank you for using nginx.</em></p>
 </body>
 </html
-
+```
 ----------------------------------------
-
+```
 sudo docker build -t hello-docker .
 
 sudo docker run -d -p 8080:80 --name myFirstHelloDocker hello-docker
@@ -59,9 +60,9 @@ sudo docker run -d -p 8080:80 --name myFirstHelloDocker hello-docker
 sudo docker run -d -p 8080:80 -v ~/tuto-docker/webapp/:/usr/share/nginx/html/ --name myFirstHelloDocker hello-docker
 
 sudo docker rm -f myFirstHelloDocker
-
+```
 --------------------UBUNTU--------------------
-
+```
 FROM docker-registry.valid.appli-gestion.nc/ubuntu:14.04
 MAINTAINER DTSI-Infras
 
@@ -80,8 +81,9 @@ VOLUME ["/usr/share/nginx/html/"]
 EXPOSE 80
 
 CMD ["nginx"]
-
+```
 ---------------------ALPINE-------------------
+```
 FROM docker-registry.valid.appli-gestion.nc/alpine:3.3
 MAINTAINER DTSI-Infras
 
@@ -96,12 +98,13 @@ VOLUME ["/usr/share/nginx/html/"]
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
-
+```
 ----------------------------------------
+```
 hello-world:
      build: .
      volumes:
        - ~/tuto-docker/webapp/:/usr/share/nginx/html/
      ports:
        - 9080:80
-
+```
