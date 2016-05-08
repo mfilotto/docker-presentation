@@ -1,4 +1,4 @@
-```
+```Dockerfile
 FROM docker-registry.valid.appli-gestion.nc/ubuntu:14.04
 MAINTAINER DTSI-Infras
 
@@ -20,7 +20,7 @@ EXPOSE 80
 CMD ["nginx"]
 ```
 ----------------------------------------
-```
+```HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,7 +62,7 @@ sudo docker run -d -p 8080:80 -v ~/tuto-docker/webapp/:/usr/share/nginx/html/ --
 sudo docker rm -f myFirstHelloDocker
 ```
 --------------------UBUNTU--------------------
-```
+```Dockerfile
 FROM docker-registry.valid.appli-gestion.nc/ubuntu:14.04
 MAINTAINER DTSI-Infras
 
@@ -83,7 +83,7 @@ EXPOSE 80
 CMD ["nginx"]
 ```
 ---------------------ALPINE-------------------
-```
+```Dockerfile
 FROM docker-registry.valid.appli-gestion.nc/alpine:3.3
 MAINTAINER DTSI-Infras
 
