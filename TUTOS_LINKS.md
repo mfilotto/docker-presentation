@@ -9,3 +9,5 @@ https://github.com/jpetazzo/orchestration-workshop
 https://blog.docker.com/2016/03/swarmweek-join-your-first-swarm/
 
 http://docker.atbaker.me/index.html
+
+https://www.youtube.com/playlist?list=PLkA60AVN3hh_6cAz8TUGtkYbJSL2bdZ4h
